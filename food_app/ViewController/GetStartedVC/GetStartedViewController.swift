@@ -27,7 +27,6 @@ class GetStartedViewController: UIViewController {
 
     @IBAction func getStartedButtonPress(_ sender: Any) {
         let loginVC = LoginViewController()
-        let homeVC = HomeViewController()
         self.navigationController?.pushViewController(loginVC, animated: false)
     }
     

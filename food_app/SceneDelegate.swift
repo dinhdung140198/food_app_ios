@@ -26,7 +26,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let homeNavi = UINavigationController(rootViewController: homeVC)
         let tabbarCotroller = UITabBarController()
         tabbarCotroller.viewControllers = [homeNavi,getStartedNavi,historyNavi]
-        window.rootViewController = tabbarCotroller
+        tabbarCotroller.tabBar.backgroundColor = .gray
+        window.rootViewController = getStartedNavi
         self.window = window
         window.makeKeyAndVisible()
     }

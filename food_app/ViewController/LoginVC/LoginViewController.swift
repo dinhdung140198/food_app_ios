@@ -9,8 +9,11 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var loginUIButton: UIButton!
+    @IBOutlet weak var headUIView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         title = "login"
         let backButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: nil)
         navigationItem.backBarButtonItem = backButton
@@ -18,7 +21,8 @@ class LoginViewController: UIViewController {
     }
     
     func setupUI(){
-        
+        headUIView.layer.cornerRadius = 20
+        loginUIButton.layer.cornerRadius = 20
     }
     /*
     // MARK: - Navigation

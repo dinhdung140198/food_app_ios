@@ -11,6 +11,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Home"
 //        let historyVC = HistoryViewController()
 //        let historyNavi = UINavigationController(rootViewController: historyVC)
 //        let homeVC = HomeViewController()

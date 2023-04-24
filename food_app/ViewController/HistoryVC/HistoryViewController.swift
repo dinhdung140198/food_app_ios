@@ -9,12 +9,17 @@ import UIKit
 
 class HistoryViewController: UIViewController {
 
+    @IBOutlet weak var startOrderUIButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "History"
+        setupUI()
         // Do any additional setup after loading the view.
     }
 
+    func setupUI(){
+        startOrderUIButton.layer.cornerRadius = 20
+    }
 
     /*
     // MARK: - Navigation
