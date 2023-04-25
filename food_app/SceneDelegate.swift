@@ -10,6 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -17,16 +18,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowSence = (scene as? UIWindowScene) else { return }
+        var isLogin: Bool = false
+        
         let window = UIWindow(windowScene: windowSence)
         let getStartedViewController = GetStartedViewController()
         let getStartedNavi = UINavigationController(rootViewController: getStartedViewController)
-        let historyVC = HistoryViewController()
-        let historyNavi = UINavigationController(rootViewController: historyVC)
-        let homeVC = HomeViewController()
-        let homeNavi = UINavigationController(rootViewController: homeVC)
-        let tabbarCotroller = UITabBarController()
-        tabbarCotroller.viewControllers = [homeNavi,getStartedNavi,historyNavi]
-        tabbarCotroller.tabBar.backgroundColor = .gray
+//        let historyVC = HistoryViewController()
+//        let historyNavi = UINavigationController(rootViewController: historyVC)
+//        let homeVC = HomeViewController()
+//        let homeNavi = UINavigationController(rootViewController: homeVC)
+//        let tabbarCotroller = UITabBarController()
+//        tabbarCotroller.viewControllers = [homeNavi,getStartedNavi,historyNavi]
+//        tabbarCotroller.tabBar.backgroundColor = .gray
         window.rootViewController = getStartedNavi
         self.window = window
         window.makeKeyAndVisible()

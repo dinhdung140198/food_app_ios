@@ -1,17 +1,17 @@
 //
-//  HomeViewController.swift
+//  ProfileViewController.swift
 //  food_app
 //
-//  Created by Nguyen Dinh Dung on 22/04/2023.
+//  Created by ominext on 25/04/2023.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Home"
+
         // Do any additional setup after loading the view.
     }
 

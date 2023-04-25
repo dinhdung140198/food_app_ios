@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		837AF52C29F78F37005815BE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837AF52A29F78F37005815BE /* ProfileViewController.swift */; };
+		837AF52D29F78F37005815BE /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 837AF52B29F78F37005815BE /* ProfileViewController.xib */; };
 		DB42E55829F2EBA4009119E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB42E55629F2EBA4009119E5 /* LoginViewController.swift */; };
 		DB42E55929F2EBA4009119E5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB42E55729F2EBA4009119E5 /* LoginViewController.xib */; };
 		DB875CA629F2D0F2006351D8 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB875CA429F2D0F2006351D8 /* GetStartedViewController.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		837AF52A29F78F37005815BE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		837AF52B29F78F37005815BE /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		DB42E55629F2EBA4009119E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DB42E55729F2EBA4009119E5 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		DB875CA429F2D0F2006351D8 /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		837AF52929F78F16005815BE /* ProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				837AF52A29F78F37005815BE /* ProfileViewController.swift */,
+				837AF52B29F78F37005815BE /* ProfileViewController.xib */,
+			);
+			path = ProfileVC;
+			sourceTree = "<group>";
+		};
 		DB42E55529F2EB68009119E5 /* LoginVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +134,7 @@
 		DBA27DD129F1800D00C3ED68 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				837AF52929F78F16005815BE /* ProfileVC */,
 				DBA9674C29F4400E004676CE /* HomeVC */,
 				DBA9674729F41AD0004676CE /* HistoryVC */,
 				DB42E55529F2EB68009119E5 /* LoginVC */,
@@ -207,6 +221,7 @@
 			files = (
 				DB42E55929F2EBA4009119E5 /* LoginViewController.xib in Resources */,
 				DBA27DCA29F17FDA00C3ED68 /* LaunchScreen.storyboard in Resources */,
+				837AF52D29F78F37005815BE /* ProfileViewController.xib in Resources */,
 				DBA27DC729F17FDA00C3ED68 /* Assets.xcassets in Resources */,
 				DB875CA729F2D0F2006351D8 /* GetStartedViewController.xib in Resources */,
 				DBA27DC529F17FD800C3ED68 /* Main.storyboard in Resources */,
@@ -228,6 +243,7 @@
 				DBA9674A29F41AF8004676CE /* HistoryViewController.swift in Sources */,
 				DB42E55829F2EBA4009119E5 /* LoginViewController.swift in Sources */,
 				DBA9674F29F4402D004676CE /* HomeViewController.swift in Sources */,
+				837AF52C29F78F37005815BE /* ProfileViewController.swift in Sources */,
 				DBA27DC029F17FD800C3ED68 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

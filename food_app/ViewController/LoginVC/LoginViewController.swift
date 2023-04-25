@@ -9,6 +9,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var passwordUITextField: UITextField!
+    @IBOutlet weak var emailUITextField: UITextField!
     @IBOutlet weak var loginUIButton: UIButton!
     @IBOutlet weak var headUIView: UIView!
     override func viewDidLoad() {
@@ -22,7 +24,22 @@ class LoginViewController: UIViewController {
     
     func setupUI(){
         headUIView.layer.cornerRadius = 20
-        loginUIButton.layer.cornerRadius = 20
+        loginUIButton.layer.cornerRadius = 10
+        emailUITextField.addBottomBorder()
+        passwordUITextField.addBottomBorder()
+        passwordUITextField.textContentType = .password
+        passwordUITextField.isSecureTextEntry = true
+        
+    }
+    @IBAction func loginOnPress(_ sender: Any) {
+        let historyVC = HistoryViewController()
+        let historyNavi = UINavigationController(rootViewController: historyVC)
+        let homeVC = HomeViewController()
+        let homeNavi = UINavigationController(rootViewController: homeVC)
+        let tabbarCotroller = UITabBarController()
+        tabbarCotroller.viewControllers = [homeNavi,historyNavi]
+        tabbarCotroller.tabBar.backgroundColor = .gray
+        navigationController?.pushViewController(tabbarCotroller, animated: false)
     }
     /*
     // MARK: - Navigation
@@ -34,4 +51,14 @@ class LoginViewController: UIViewController {
     }
     */
 
+}
+
+extension UITextField {
+    func addBottomBorder(){
+        let bottomLine = CALayer()
+        bottomLine.frame = CGRect(x: 0, y: self.frame.size.height - 1, width: self.frame.size.width, height: 1)
+        bottomLine.backgroundColor = UIColor.gray.cgColor
+        borderStyle = .none
+        layer.addSublayer(bottomLine)
+    }
 }
