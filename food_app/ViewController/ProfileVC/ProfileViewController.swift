@@ -9,12 +9,18 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var infomationFieldUIView: UIView!
+    @IBOutlet weak var updateProfileUIButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupUI()
         // Do any additional setup after loading the view.
     }
-
+    
+    func setupUI(){
+        infomationFieldUIView.layer.cornerRadius = 10
+        updateProfileUIButton.layer.cornerRadius = 30
+    }
 
     /*
     // MARK: - Navigation
